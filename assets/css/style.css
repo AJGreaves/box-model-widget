@@ -9,6 +9,25 @@ h2, h4 {
     text-align: center;
 }
 
+h2 {
+    margin-top: 40px;
+}
+
+.column-left {
+    width: 60%;
+    display: inline-block;
+}
+
+.column-right {
+    width: 40%;
+    display: inline-block;
+}
+
+img {
+    margin-top: 40px;
+    width: 100%;
+}
+
 button {
     color: #25282b;
     border: 1px solid #435260;
@@ -39,7 +58,7 @@ table {
 }
 
 input[type=range] {
-    width: 340px;
+    width: 100%;
     
 }
 
@@ -55,3 +74,18 @@ td {
     width: 80px;
 }
 
+.cell {
+    width: 100px;
+}
+
+#code-box {
+    border: inset;
+    background-color: #e7ecf0;
+    width: 300px;
+    margin: 50px 0;
+}
+
+pre {
+    font-size: 1rem;
+    padding: 0 20px;
+}

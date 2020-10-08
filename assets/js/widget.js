@@ -11,9 +11,12 @@ function adjustPadding(){
         buttons[i].style.padding = `${this.value}px`;
     }
 
-    // update value box in browser
-    let paddingVal = document.getElementById('padding-val');
-    paddingVal.innerHTML = `${this.value}px`; 
+    let paddingVal = document.getElementsByClassName('padding-val');
+    for (i = 0; i < paddingVal.length; i++){
+        paddingVal[i].innerHTML = `${this.value}px`;
+    }
+    updateCode('padding-code');
+    return;
 }
 
 let paddingInput = document.getElementById('padding');
@@ -29,9 +32,13 @@ function adjustBorder(){
     for (i = 0; i < buttons.length; i++){
         buttons[i].style.borderWidth = `${this.value}px`;
     }
-    // update value box in browser
-    let borderVal = document.getElementById('border-val');
-    borderVal.innerHTML = `${this.value}px`; 
+    
+    let borderVal = document.getElementsByClassName('border-val');
+    for (i = 0; i < borderVal.length; i++){
+        borderVal[i].innerHTML = `${this.value}px`;
+    } 
+    updateCode('border-code');
+    return;
 }
 
 let borderInput = document.getElementById('border');
@@ -47,9 +54,13 @@ function adjustMargin(){
     for (i = 0; i < buttons.length; i++){
         buttons[i].style.margin = `${this.value}px`;
     }
-    // update value box in browser
-    let marginVal = document.getElementById('margin-val');
-    marginVal.innerHTML = `${this.value}px`; 
+    
+    let marginVal = document.getElementsByClassName('margin-val');
+    for (i = 0; i < marginVal.length; i++){
+        marginVal[i].innerHTML = `${this.value}px`;
+    } 
+    updateCode('margin-code');
+    return;
 }
 
 let marginInput = document.getElementById('margin');
@@ -65,10 +76,23 @@ function adjustContent(){
     for (i = 0; i < buttons.length; i++){
         buttons[i].style.fontSize = `${this.value}px`;
     }
-    // update value box in browser
-    let contentVal = document.getElementById('content-val');
-    contentVal.innerHTML = `${this.value}px`; 
+    
+    let contentVal = document.getElementsByClassName('content-val');
+    for (i = 0; i < contentVal.length; i++){
+        contentVal[i].innerHTML = `${this.value}px`;
+    }
+    updateCode('font-code');
+    return;
 }
 
 let contentInput = document.getElementById('content');
 contentInput.addEventListener('input', adjustContent);
+
+function updateCode(codeType){
+    let allCodeLines = document.getElementsByClassName('code-line');
+    for (i = 0; i < allCodeLines.length; i++){
+        allCodeLines[i].style.color = '#435260';
+    }
+    document.getElementById(codeType).style.color = '#f5a40d';
+    return;
+}
