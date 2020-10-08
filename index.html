@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-model-wrapper {
+            background: grey;
+        }
+
+        .box {
+            margin: 10px;
+            border: 10px solid blue;
+            padding: 10px;
+            background-color: green;
+            background-origin: content-box;
+            height: 200px;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-model-wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
