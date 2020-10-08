@@ -5,29 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #box-model-wrapper {
-            background: grey;
-        }
-
-        .box {
-            margin: 10px;
-            border: 10px solid blue;
-            padding: 10px;
-            background-color: green;
-            background-origin: content-box;
-            height: 200px;
-            width: 300px;
-            display: inline-block;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="box-model-wrapper">
-        <div class="box"></div>
-        <div class="box"></div>
+        <h2>The box-model widget</h2>
+        <div id="box-model-box">
+            <button>First Button</button>
+            <button>Second Button</button>
+        </div>
+        <div id="box-model-controls">
+            <h4>Adjust your values to see how they effect the buttons</h4>
+            <table>
+                <tr>
+                    <td class="value-col">
+                        <label for="content">Content</label>
+                    </td>
+                    <td id="content-val">
+                        23
+                    </td>
+                    <td><input type="range" id="content" name="content" min="0" max="100" value="23" step="1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="padding">Padding</label>
+                    </td>
+                    <td id="padding-val">
+                        10
+                    </td>
+                    <td>
+                        <input type="range" id="padding" name="padding" min="0" max="100" value="10" step="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="border">Border</label>
+                    </td>
+                    <td id="border-val">
+                        1
+                    </td>
+                    <td>
+                        <input type="range" id="border" name="border" min="0" max="100" value="1" step="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="margin">Margin</label>
+                    </td>
+                    <td id="margin-val">
+                        5
+                    </td>
+                    <td>
+                        <input type="range" id="margin" name="margin" min="0" max="100" value="5" step="1">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <script src="widget.js"></script>
 </body>
 
 </html>
