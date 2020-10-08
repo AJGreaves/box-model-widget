@@ -93,6 +93,6 @@ function updateCode(codeType){
     for (i = 0; i < allCodeLines.length; i++){
         allCodeLines[i].style.color = '#435260';
     }
-    document.getElementById(codeType).style.color = '#f5a40d';
+    document.getElementById(codeType).style.color = '#df6604';
     return;
 }
