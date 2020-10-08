@@ -1,3 +1,4 @@
+let buttons = document.getElementsByTagName('button');
 
 /**
  * Function to adjust padding on buttons when the slider
@@ -15,7 +16,18 @@ function adjustPadding(){
     paddingVal.innerHTML = this.value; 
 }
 
-let buttons = document.getElementsByTagName('button');
-
 let paddingInput = document.getElementById('padding');
 paddingInput.addEventListener('input', adjustPadding);
+
+function adjustBorder(){
+    // update border on buttons
+    for (i = 0; i < buttons.length; i++){
+        buttons[i].style.borderWidth = `${this.value}px`
+    }
+    // update value box in browser
+    let borderVal = document.getElementById('border-val');
+    borderVal.innerHTML = this.value; 
+}
+
+let borderInput = document.getElementById('border');
+borderInput.addEventListener('input', adjustBorder);
