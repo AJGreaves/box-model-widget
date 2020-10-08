@@ -92,7 +92,9 @@ function updateCode(codeType){
     let allCodeLines = document.getElementsByClassName('code-line');
     for (i = 0; i < allCodeLines.length; i++){
         allCodeLines[i].style.color = '#435260';
+        allCodeLines[i].style.fontWeight = 'normal';
     }
     document.getElementById(codeType).style.color = '#df6604';
+    document.getElementById(codeType).style.fontWeight = 'bold';
     return;
 }
