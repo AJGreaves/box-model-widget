@@ -19,3 +19,23 @@ The student goals for this application are:
 * Responsive design so the app can be used on all screen sizes
 
 This website is built with HTML, CSS and JavaScript.
+
+## UX
+
+#### Ideal Client
+##### The Ideal Client for this application is:
+* English speaking
+* Has a basic understanding of CSS syntax
+* Is a student of Code Institute
+
+##### Visitors to this website are searching for:
+* A better understanding of the the CSS Box Model
+* An interactive way to learn about the 4 sections of the Box Model
+* A clear explanation of the overall concept
+* Code examples to help apply further knowledge
+
+##### This project is the best way to help them achieve this things because:
+* On researching we were not able to find any application that already provides an interactive tool for teaching the box model concept
+* The User Interface is clean and simple to use
+* The text based part of the lesson is clear and concise
+* The provided image helps visualize the concept 
