@@ -4,7 +4,7 @@
 
 [View website in GitHub Pages](https://github.com/AJGreaves/box-model-widget)
 
-An interactive widget to help Code Institute students understand the CSS Box model. Website features a brief text based introduction to the box model with a concept image, a window with a pair of buttons, 4 interactive sliders and a code output box. The primary goal of this application is for users to have a clear understanding of the different parts of the CSS Box Model and how they interact.
+An interactive widget to help [Code Institute](https://codeinstitute.net) students understand the CSS Box model. Website features a brief text based introduction to the box model with a concept image, a window with a pair of buttons, 4 interactive sliders and a code output box. The primary goal of this application is for users to have a clear understanding of the different parts of the CSS Box Model and how they interact.
 
 The business goals of this application are:
 * Build brand credibility
@@ -39,3 +39,21 @@ This website is built with HTML, CSS and JavaScript.
 * The User Interface is clean and simple to use
 * The text based part of the lesson is clear and concise
 * The provided image helps visualize the concept 
+
+## Credits
+
+### Content
+- The introduction text was written by Niel McEwen and Anna Greaves for Code Institute
+
+### Media
+- Concept image by the design team at [Code Institute](https://codeinstitute.net)
+
+### Acknowledgements
+
+- I received inspiration for this project from my colleague Ronan Burke, who found demonstrating the box model with two buttons and adjusting their values helped students understand the concept effectively. 
+
+#### Disclaimer
+
+The content of this application was build for Code Institute
+
+The content of this Website is for educational purposes only.
