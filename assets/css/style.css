@@ -60,11 +60,6 @@ button {
 #code-box {
     width: 300px;
     border-radius: 8px;
-    /*
-    centers code box on mobile screens,
-    adjusted to align left on larger
-    screens in media queries
-    */
     margin: 0 auto;
 }
 
@@ -112,11 +107,7 @@ pre {
         height: 230px;
         margin: 50px 0;
     }
-
-    #code-box {
-        margin: 25px 0;
-    }
-
+    
     /*
     Adds more width to column in table
     to show current selected value
