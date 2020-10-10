@@ -17,17 +17,17 @@
             <div class="col-12">
                 <h2>The box-model widget</h2>
 
-                <div id="box-model-box">
+                <div id="box-model-box" class="grey-box">
                     <button>Button</button>
                     <button>Button</button>
-                    <button>Button</button>
+                    <button id="third-button">Button</button>
                 </div>
             </div>
             <div class="col-12">
                 <h4>Adjust your values to see how they affect the buttons and their code</h4>
             </div>
             
-            <div class="col-md-8">
+            <div class="col-md-8 mb-5">
                 <div id="box-model-controls">
                     
                     <table>
@@ -58,10 +58,10 @@
                                 Border
                             </td>
                             <td class="border-val">
-                                1px
+                                4px
                             </td>
                             <td class="input-cel">
-                                <input type="range" id="border" name="border" min="0" max="10" value="1" step="1">
+                                <input type="range" id="border" name="border" min="0" max="10" value="4" step="1">
                             </td>
                         </tr>
                         <tr>
@@ -69,17 +69,17 @@
                                 Margin
                             </td>
                             <td class="margin-val">
-                                5px
+                                10px
                             </td>
                             <td class="input-cel">
-                                <input type="range" id="margin" name="margin" min="0" max="40" value="5" step="1">
+                                <input type="range" id="margin" name="margin" min="0" max="40" value="10" step="1">
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div id="code-box">
+            <div class="col-md-4 mb-5">
+                <div id="code-box" class="grey-box">
                     <pre>button {
     <span id="font-code" class="code-line">font-size: <span class="content-val">20px</span>;</span>
     <span id="padding-code" class="code-line">padding: <span class="padding-val">10px</span>;</span>

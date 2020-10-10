@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body, button {
+body,
+button {
     font-family: "Montserrat", sans-serif;
     color: #435260;
 }
 
-h2, h4 {
+h2,
+h4 {
     text-align: center;
 }
 
@@ -29,27 +31,49 @@ img {
 }
 
 button {
-    color: #25282b;
-    border: 1px solid #435260;
+    color: #445261;
+    border: 4px solid #445261;
     padding: 10px;
-    background: #23bbbc;
-    margin: 5px;
+    background: #23bbbb;
+    margin: 10px;
+}
+
+#third-button {
+    display: none;
 }
 
 #box-model-wrapper {
     margin: 0 auto;
     max-width: 600px;
-    
 }
 
 #box-model-box {
     margin: 50px 0;
-    border: inset;
-    height: 230px;
-    background-color: #e7ecf0;
+    /*
+    height for on mobile screen, 
+    adjusted for larger screens 
+    in media queries
+    */
+    height: 450px;
 }
 
-button, label {
+#code-box {
+    width: 300px;
+    border-radius: 8px;
+    /*
+    centers code box on mobile screens,
+    adjusted to align left on larger
+    screens in media queries
+    */
+    margin: 0 auto;
+}
+
+.grey-box {
+    background-color: #eeeeee;
+}
+
+button,
+label {
     font-size: 20px;
 }
 
@@ -59,7 +83,7 @@ table {
 
 input[type=range] {
     width: 100%;
-    
+
 }
 
 .input-cel {
@@ -74,18 +98,46 @@ td {
     width: 80px;
 }
 
-.cell {
-    width: 100px;
-}
-
-#code-box {
-    border: inset;
-    background-color: #e7ecf0;
-    width: 300px;
-    margin: 50px 0;
-}
-
 pre {
-    font-size: 1rem;
-    padding: 0 20px;
+    font-size: 1.1rem;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* Media queries */
+
+/* tablets and larger */
+@media (min-width: 768px) {
+    #box-model-box {
+        height: 230px;
+        margin: 50px 0;
+    }
+
+    #code-box {
+        margin: 25px 0;
+    }
+
+    /*
+    Adds more width to column in table
+    to show current selected value
+    */
+    .cell {
+        width: 100px;
+    }
+
+    #third-button {
+        display: inline-block;
+    }
+}
+
+/*
+Bug fix: display the 3rd button only on screen 
+sizes where the box model area is 
+large enough for it to fit 
+*/
+@media (min-width: 1000px) {
+
+    #third-button {
+        display: inline-block;
+    }
 }

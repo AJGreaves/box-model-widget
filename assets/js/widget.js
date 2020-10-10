@@ -94,7 +94,7 @@ function updateCode(codeType){
         allCodeLines[i].style.color = '#435260';
         allCodeLines[i].style.fontWeight = 'normal';
     }
-    document.getElementById(codeType).style.color = '#df6604';
+    document.getElementById(codeType).style.color = '#007bff';
     document.getElementById(codeType).style.fontWeight = 'bold';
     return;
 }
