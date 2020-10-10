@@ -15,7 +15,32 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2>The box-model widget</h2>
+                <h1>The Box Model Widget</h1>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Understanding the box model</h2>
+                <p>
+                    Every HTML element can be represented as a rectangular box. That box has a content area, paddings,
+                    margins, and borders. The sum of all of the four areas horizontally and vertically is the total
+                    width and height of the element, respectively.
+                </p>
+                <p>
+                    The box model is a core principle of CSS, and it is impossible to code layout without a deep
+                    understanding of the box model.
+                </p>
+                <p>
+                    The <strong>content</strong> in the box model is the content of the element: text, images etc… It contains the actual
+                    content.
+                </p>
+                <p>The <strong>padding</strong> creates space around the content between the content and its border.</p>
+                <p>The <strong>border</strong> defines the a border around the element, whenever we want to draw a 
+                    line around an element, like the edge of a button, we would use the border part of the box model.</p>
+                <p>The <strong>margin</strong> creates space around the element itself, between its border and other elements around it.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="https://i.ibb.co/93BDyVf/box-model.png" alt="The box model">
+            </div>
+            <div class="col-12">
 
                 <div id="box-model-box" class="grey-box">
                     <button>Button</button>
@@ -26,10 +51,10 @@
             <div class="col-12">
                 <h4>Adjust your values to see how they affect the buttons and their code</h4>
             </div>
-            
+
             <div class="col-md-8 mb-5">
                 <div id="box-model-controls">
-                    
+
                     <table>
                         <tr>
                             <td class="value-col">
