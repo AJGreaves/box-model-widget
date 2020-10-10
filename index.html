@@ -19,39 +19,48 @@
             </div>
             <div class="col-12 col-lg-6">
                 <p>
-                    Every HTML element can be represented as a rectangular box. That box has a content area, paddings,
+                    HTML elements can be represented as a rectangular box. That box has a content area, paddings,
                     margins, and borders. The sum of all of the four areas horizontally and vertically is the total
                     width and height of the element, respectively.
                 </p>
                 <p>
-                    The box model is a core principle of CSS, and it is impossible to code layout without a deep
-                    understanding of the box model.
+                    The box model is a core principle of CSS, and understanding it will help a great deal in planning
+                    and implementing the layout of your elements.
                 </p>
                 <p>
-                    The <strong>content</strong> in the box model is the content of the element: text, images etc… It contains the actual
+                    The <strong>content</strong> in the box model is the content of the element: text, images etc… It
+                    contains the actual
                     content.
                 </p>
                 <p>The <strong>padding</strong> creates space around the content between the content and its border.</p>
-                <p>The <strong>border</strong> defines the a border around the element, whenever we want to draw a 
-                    line around an element, like the edge of a button, we would use the border part of the box model.</p>
-                <p>The <strong>margin</strong> creates space around the element itself, between its border and other elements around it.</p>
+                <p>The <strong>border</strong> defines the a border around the element, whenever we want to draw a
+                    line around an element, like the edge of a button, we would use the border part of the box model.
+                </p>
+                <p>The <strong>margin</strong> creates space around the element itself, between its border and other
+                    elements around it.</p>
             </div>
             <div class="col-12 col-lg-6">
                 <img src="https://i.ibb.co/93BDyVf/box-model.png" alt="The box model">
             </div>
-            <div class="col-12">
-
+            <div class="col-12 mt-5">
+                <h4>Adjust the values below to see how they affect the buttons and their code</h4>
                 <div id="box-model-box" class="grey-box">
                     <button>Button</button>
                     <button>Button</button>
                     <button id="third-button">Button</button>
                 </div>
             </div>
-            <div class="col-12">
-                <h4>Adjust the values below to see how they affect the buttons and their code</h4>
+            <div class="col-md-5 col-lg-4 mb-5">
+                <div id="code-box" class="grey-box">
+                    <pre>button {
+    <span id="font-code" class="code-line">font-size: <span class="content-val">20px</span>;</span>
+    <span id="padding-code" class="code-line">padding: <span class="padding-val">10px</span>;</span>
+    <span id="border-code" class="code-line">border-width: <span class="border-val">1px</span>;</span>
+    <span id="margin-code" class="code-line">margin: <span class="margin-val">5px;</span>;</span>
+}</pre>
+                </div>
             </div>
-
-            <div class="col-md-8 mb-5">
+            <div class="col-md-7 col-lg-8 mb-5">
                 <div id="box-model-controls">
 
                     <table>
@@ -102,16 +111,7 @@
                     </table>
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div id="code-box" class="grey-box">
-                    <pre>button {
-    <span id="font-code" class="code-line">font-size: <span class="content-val">20px</span>;</span>
-    <span id="padding-code" class="code-line">padding: <span class="padding-val">10px</span>;</span>
-    <span id="border-code" class="code-line">border-width: <span class="border-val">1px</span>;</span>
-    <span id="margin-code" class="code-line">margin: <span class="margin-val">5px;</span>;</span>
-}</pre>
-                </div>
-            </div>
+
 
 
         </div>
