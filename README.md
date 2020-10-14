@@ -2,7 +2,7 @@
 <h1>The Box Model Widget</h1>
 </div>
 
-[View website in GitHub Pages](https://github.com/AJGreaves/box-model-widget)
+[View website in GitHub Pages](https://ajgreaves.github.io/box-model-widget/)
 
 An interactive widget to help [Code Institute](https://codeinstitute.net) students understand the CSS Box model. Website features a brief text based introduction to the box model with a concept image, a window with a pair of buttons, 4 interactive sliders and a code output box. The primary goal of this application is for users to have a clear understanding of the different parts of the CSS Box Model and how they interact.
 
